@@ -1,3 +1,8 @@
+<?php
+
+session_start();
+
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -37,8 +42,7 @@
                     <input type="password" name="senha" placeholder="Digite a sua senha" size="30">
                     <input type="submit" class="btnConfirm" name="acessar" value="Acessar">
                     <?php
-                    if (isset($_GET['msg'])) {
-                        $msg =urldecode($_GET['msg']);
+                    if (isset($_SESSION['msg'])) {
                         echo '<div class="erro-msg" style="
 					color: red;
 					background-color: yellow;
@@ -47,8 +51,8 @@
 					padding: 10px;
 					border: 1px solid red;
 					font-size: 16px;
-					text-align: center;">' . $msg . '</div>';
-                        unset($msg);
+					text-align: center;">' . $_SESSION['msg'] . '</div>';
+                        unset($_SESSION['msg']);
                     }
                     ?>
                     <h4 class="row text-center" style="margin-top: 20px; color: #ffffff;">Ainda não possui uma conta?

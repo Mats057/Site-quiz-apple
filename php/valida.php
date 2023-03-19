@@ -21,28 +21,20 @@
 
                 }else{
                     $_SESSION['msg'] = "Usuário ou senha incorreta";
-                    $msg = $_SESSION['msg'];
-                    $url = "../login.php?msg=" . urlencode($msg);
-                    header("Location: $url");
+                    header("Location:../login.php");
                 }
 
             }else
             {
                 $_SESSION['msg'] = "Usuário não encontrado";
-                $msg = $_SESSION['msg'];
-                $url = "../login.php?msg=" . urlencode($msg);
-                header("Location: $url");
+                header("Location:../login.php");
             }
         }else{
             $_SESSION['msg'] = "Digite o usuário e a senha";
-            $msg = $_SESSION['msg'];
-            $url = "../login.php?msg=" . urlencode($msg);
-            header("Location: $url");
+            header("Location:../login.php");
         }
     }else{
         $_SESSION['msg'] = "Página não encontrada";
-        $msg = $_SESSION['msg'];
-        $url = "../login.php?msg=" . urlencode($msg);
-        header("Location: $url");
+        header("Location:../login.php");
     }
 ?>
