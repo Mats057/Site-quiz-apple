@@ -25,7 +25,9 @@ SET time_zone = "+00:00";
 
 --
 -- Table structure for table `usuarios`
---
+-- 
+if NOT EXISTS CREATE DATABASE apple;
+USE apple;
 
 CREATE TABLE `usuarios` (
   `id` int NOT NULL,
