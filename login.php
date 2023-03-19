@@ -40,7 +40,7 @@ session_start();
                     <input type="text" name="usuario" placeholder="Digite o seu usuario" size="30">
                     <label for="senha" style="margin-top: 20px; color: #ffffff;">Senha:</label><p>
                     <input type="password" name="senha" placeholder="Digite a sua senha" size="30">
-                    <input type="submit" class="btnConfirm" name="acessar" value="Acessar">
+                    <input type="submit" id="btnConfirm" name="acessar" value="Acessar">
                     <?php
                     if (isset($_SESSION['msg'])) {
                         echo '<div class="erro-msg" style="
@@ -57,7 +57,7 @@ session_start();
                     ?>
                     <h4 class="row text-center" style="margin-top: 20px; color: #ffffff;">Ainda não possui uma conta?
                     </h4>
-                    <a href="php/cadastrar.php" class="text-center">Clique aqui e crie uma grátis</a>
+                    <a href="php/cadastrar.php" id="criar-conta" class="text-center">Clique aqui e crie uma grátis</a>
                 </fieldset>
             </form>
         </div>

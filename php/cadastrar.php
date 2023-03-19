@@ -105,7 +105,7 @@ if ($btnCadUsuario) {
 				<label style="margin-top: 20px; color: #ffffff;">Senha:</label><p>
 				<input type="password" name="senha" placeholder="Digite a senha" class="form-control"><br>
 
-				<input type="submit" name="btnCadUsuario" value="Cadastrar" class="btnConfirm" /><br><br>
+				<input type="submit" name="btnCadUsuario" value="Cadastrar" id="btnConfirm" /><br><br>
 				<?php
 				if (isset($_SESSION['msg'])) {
 					echo '<div class="erro-msg" style="
@@ -123,7 +123,7 @@ if ($btnCadUsuario) {
 
 
 				<div class="row text-center" style="margin-top: 20px; color: #ffffff;">
-					Lembrou? <a href="../login.php" class="text-center">Clique aqui</a> para logar
+					Lembrou? <a href="../login.php" id="criar-conta" class="text-center">Clique aqui</a> para logar
 				</div>
 			</fieldset>
 			</form>

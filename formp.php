@@ -25,7 +25,7 @@ if (!empty($_SESSION['id'])) {
         <a class="space">|</a>
         <h1 id="title">Teste Apple</h1>
         <a class="space">|</a>
-        <a href="login.php" class="title2">
+        <a href="php./consultar.php" class="title2">
             <h7 class="title2">Resultados
         </a></h7>
         <a class="space">|</a>
@@ -34,15 +34,15 @@ if (!empty($_SESSION['id'])) {
         </a></h7>
     </header>
     <main> <?php
-        echo '<h2 class="text-center" id="restrita">Olá ' . $_SESSION['nome'] . ', Seja bem vindo!</h2>
-    <h2 class="text-center" ><a href="php/logout.php">Sair</a></h2>';
-        ?> <div id="intro">
+            echo '<h2 class="text-center" id="restrita">Olá ' . $_SESSION['nome'] . ', Seja bem vindo!</h2>';
+            ?>
+        <div id="intro">
             <form action="php/salvar_result.php" method="post">
                 <div class="questoes">
                     <p><label value="pergunta1" id="pergunta1" style="margin-top: 20px; color: #ffffff;">1. Em que
                             cidade a Apple está sediada?</label></p>
                     <input type="radio" name="perg1" value="1a"><label>a) Nova York</label><br>
-                    <input type="radio" name="per1" value="1b"><label>b) Los Angeles</label><br>
+                    <input type="radio" name="perg1" value="1b"><label>b) Los Angeles</label><br>
                     <input type="radio" name="perg1" value="1c"><label>c) Cupertino</label><br><br>
                 </div>
                 <div class="questoes">
@@ -106,14 +106,17 @@ if (!empty($_SESSION['id'])) {
                 </div>
                 <div class="questoes">
                     <p><label value="pergunta10" id="pergunta10" style="margin-top: 20px; color: #ffffff;"> 10. Com sua
-                        abordagem única para design e inovação, o que a Apple continua a liderar?</label></p>
+                            abordagem única para design e inovação, o que a Apple continua a liderar?</label></p>
                     <input type="radio" name="perg10" value="10a">a) A indústria automotiva<br>
                     <input type="radio" name="perg10" value="10b">b) A indústria de moda</label><br>
                     <input type="radio" name="perg10" value="10c">c) A indústria de tecnologia<br><br>
                 </div>
-                <input type="submit" class="btnTerminar" name="terminar" value="Terminar">
+                <div class="text-center"><input type="submit" id="btnConfirm" name="btnTerminar" value="Terminar">
+                    <a class="btnSair" href="php/logout.php">Sair</a>
+                </div>
             </form>
         </div>
     </main>
 </body>
+
 </html>
