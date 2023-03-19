@@ -1,0 +1,183 @@
+@font-face {
+  font-family: "SFRegular";
+  src: url("SFUIText-Regular.otf") format("truetype");
+}
+
+body {
+  background-color: #4a4857;
+  margin: 0;
+  padding: 0;
+  font-family: "SFRegular";
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  background-color: #1a1b1c;
+  color: #e9e0d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 25px 10% 20px;
+  border-radius: 18px;
+}
+
+#title {
+  text-align: center;
+  font-size: 35px;
+}
+
+.title2 {
+  text-align: center;
+  font-size: 35px;
+  text-decoration: none;
+  color: #e9e0d1;
+}
+.title2:hover {
+  text-align: center;
+  font-size: 35px;
+  text-decoration: none;
+  color: #e9e0d1;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+
+#intro {
+  color: #e9e0d1;
+  font-size: 23px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 40px 300px;
+}
+
+.image {
+  max-width: 50%;
+  margin-bottom: 40px;
+}
+
+.space {
+  font-size: 40px;
+  margin: auto 20px;
+}
+
+#options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .space {
+    display: none;
+  }
+
+  #header {
+    flex-direction: column;
+  }
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+
+.form-signin {
+  background: #1a1b1c;
+  padding: 20px;
+  width: 400px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.form-signin input {
+  width: 90%;
+  margin-bottom: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btnConfirm {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#cad {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin: -20px -20px 20px;
+  padding: 5px;
+  background: #c0c0c0;
+  text-shadow: -1px 1px 1px #999;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+#restrita {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin: 20px 0;
+  padding: 5px;
+  background: #6b1f1f;
+  text-shadow: -1px 1px 1px #999;
+}
+
+#titleLogin {
+  text-align: center;
+  font-size: 35px;
+  color: #e9e0d1;
+}
+.text-center {
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+  color: #4c4499;
+}
+.text-center:hover {
+  text-align: center;
+  text-decoration: none;
+  margin-top: 20px;
+  color: #4c4499;
+  transition: 0.2s;
+  opacity: 0.7;
+}
+
+.btnTerminar {
+  margin-top: 20px;
+  background-color: #d12c38;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btnTerminar:hover {
+  margin-top: 20px;
+  background-color: #a3222b;
+  transition: 0.2s;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
