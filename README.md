@@ -1,5 +1,5 @@
 # Site-quiz-apple
-Um site criado por mim para aula de PW, a fim de aprender e fixar sistemas de cadastro, gerenciamento de contas e formulários em HTML/CSS, PHP e MySQL
+Um site criado por mim, a fim de aprender e fixar sistemas de cadastro, gerenciamento de contas e formulários em HTML/CSS, PHP e MySQL
 
 Requisitos do professor
 

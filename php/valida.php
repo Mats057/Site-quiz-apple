@@ -15,6 +15,7 @@
                 $row_usuario = mysqli_fetch_assoc($resultado_usuario);
                 if(password_verify($senha, $row_usuario['senha'])){
                     $_SESSION['id'] = $row_usuario['id'];
+                    $_SESSION['usuario'] = $usuario;
                     $_SESSION['nome'] = $row_usuario['nome'];
                     $_SESSION['email'] = $row_usuario['email'];
                     header("Location: ../formp.php");
