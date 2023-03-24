@@ -73,7 +73,7 @@ if ($btnCadUsuario) {
 <body>
 	<header>
 		<div id="options">
-			<a href="../index.html" class="title2">
+			<a href="../index.php" class="title2">
 				<h7 class="title2">Sobre a Apple
 			</a></h7>
 			<a class="space">|</a>

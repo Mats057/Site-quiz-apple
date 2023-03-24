@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -18,12 +21,36 @@
                 <h7 class="title2">Teste Apple
             </a></h7>
             <a class="space">|</a>
-            <a href="login.php" class="title2">
-                <h7 class="title2">Logar
+            <a href="<?php
+                        if (!empty($_SESSION['id'])) {
+                            echo "php/consultar.php";
+                            } else {
+                            echo "login.php";
+                            }
+                            ?>" class="title2">
+                <h7 class="title2" id="logar"><?php
+                                                if (!empty($_SESSION['id'])) {
+                                                    echo "Resultados";
+                                                } else {
+                                                    echo "Logar";
+                                                }
+                                                ?>
             </a></h7>
             <a class="space">|</a>
-            <a href="php/cadastrar.php" class="title2">
-                <h7 class="title2">Cadastrar-se
+            <a href="<?php
+                        if (!empty($_SESSION['id'])) {
+                            echo "php/logout.php";
+                            } else {
+                            echo "php/cadastrar.php";
+                            }
+                            ?>" class="title2">
+                <h7 class="title2"><?php
+                                                if (!empty($_SESSION['id'])) {
+                                                    echo "Sair";
+                                                } else {
+                                                    echo "Cadastrar-se";
+                                                }
+                                                ?>
             </a></h7>
         </div>
     </header>
