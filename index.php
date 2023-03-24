@@ -79,7 +79,7 @@ session_start();
             dos anos, incluindo uma luta prolongada com o FBI
             sobre o acesso a dados do iPhone de um terrorista, a Apple continua a ser uma das empresas mais influentes
             do mundo da tecnologia. Com sua abordagem única para design e inovação, a Apple continua a liderar
-            aindústria de tecnologia e a moldar o futuro da computação pessoal.
+            a indústria de tecnologia e a moldar o futuro da computação pessoal.
         </div>
 
     </main>

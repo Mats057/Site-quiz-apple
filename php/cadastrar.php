@@ -89,7 +89,7 @@ if ($btnCadUsuario) {
 		</div>
 	</header>
 	<div class="container">
-		<div class="form-signin" style="background: #1a1b1c; text-align:center;">
+		<div class="form-signin">
 			<h2 id="cad">Formulário de Cadastro</h2>
 			<form method="POST" action="">
 				<fieldset>
