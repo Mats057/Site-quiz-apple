@@ -44,7 +44,7 @@ if ($_POST['perg10'] == '10c') {
 $teste_usuario = "SELECT usuario FROM resultados WHERE usuario='" . $_SESSION['usuario'] . "'";
 $testando_usuario = mysqli_query($sql, $teste_usuario);
 if (($testando_usuario) and ($testando_usuario->num_rows != 0)) {
-    $_SESSION['msg'] = "Você já fez esse teste";
+    //$_SESSION['msg'] = "Você já fez esse teste";
 } else {
     $result_usuario = "INSERT INTO resultados (usuario, nota) VALUES (
         '" . $_SESSION['usuario'] . "',
@@ -86,8 +86,8 @@ if (($testando_usuario) and ($testando_usuario->num_rows != 0)) {
                 echo '<div id="restrita-rep"><h2 class="text-center">' . $_SESSION['nome'] . ' já fez o teste, exclua a nota antiga para refazer!</h2></div>';
                 unset($_SESSION['msg']);
             } else {
-                echo '<div id="restrita"><h7 class="text-center">Olá ' . $_SESSION['nome'] . ', seus resultados estão logo abaixo!</h7></div>';
                 echo '<div id="respostas">';
+                echo '<div id="restrita"><h7 class="text-center">Olá ' . $_SESSION['nome'] . ', seus resultados estão logo abaixo!</h7></div>';
                 echo '<label class="resp" for="perg1">';
                 if ($_POST['perg1'] == '1c') {
                     echo '1. Você escolheu a letra "c) Cupertino" e acertou';
