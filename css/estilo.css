@@ -194,9 +194,9 @@ header {
 }
 #respostas{
   display: block;
-  margin: 0 20%;
+  margin: 20px 20%;
   border-radius: 20px;
-  padding-bottom: 5px;
+  padding: 5px;
   color: var(--cor-letra);
   align-items: center;
   text-align: center;
@@ -239,4 +239,27 @@ header {
   margin: 20px auto;
   border-radius: 20px;
   border: var(--cor-apple) 2px solid;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-child {
+  background-color: var(--cor-menu);
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+}
+.dropdown-child a {
+    color: var(--cor-letra2);
+    padding: 20px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown:hover .dropdown-child {
+    display: block;
+}
+.dropdown-child a:hover {
+    transition: 0.5s;
+    opacity: 0.7;
 }

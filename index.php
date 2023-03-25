@@ -23,21 +23,34 @@ session_start();
                 <h7 class="title2">Teste Apple
             </a></h7>
             <a class="space">|</a>
-            <a href="<?php
-                        if (!empty($_SESSION['id'])) {
-                            echo "php/consultar.php";
-                        } else {
-                            echo "login.php";
-                        }
-                        ?>" class="title2">
-                <h7 class="title2" id="logar"><?php
-                                                if (!empty($_SESSION['id'])) {
-                                                    echo "Resultados";
-                                                } else {
-                                                    echo "Logar";
-                                                }
-                                                ?>
-            </a></h7>
+            <div class="dropdown">
+                <a href="<?php
+                            if (!empty($_SESSION['id'])) {
+                                echo "";
+                            } else {
+                                echo "login.php";
+                            }
+                            ?>" class="title2">
+                    <h7 class="title2" id="logar"><?php
+                                                    if (!empty($_SESSION['id'])) {
+                                                        echo "Dados";
+                                                    } else {
+                                                        echo "Logar";
+                                                    }
+                                                    ?>
+                </a></h7>
+                <?php
+                if (!empty($_SESSION['id'])) {
+                echo '<div class="dropdown-child">
+                    <a href="php/notas.php">Notas</a>
+                    <a href="php/users.php">Usuários</a>
+                    </div>';
+                } else {
+                    echo '';
+                }?>
+            </div>
+
+
             <a class="space">|</a>
             <a href="<?php
                         if (!empty($_SESSION['id'])) {

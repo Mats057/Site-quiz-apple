@@ -27,9 +27,17 @@ if (!empty($_SESSION['id'])) {
         <a class="space">|</a>
         <h7 id="title">Teste Apple</h7>
         <a class="space">|</a>
-        <a href="php/consultar.php" class="title2">
-            <h7 class="title2">Resultados
-        </a></h7>
+        <div class="dropdown">
+            <a class="title2">
+                <h7 class="title2">Dados
+
+            </a></h7>
+            <div class="dropdown-child">
+                <a href="php/notas.php">Notas</a>
+                <a href="php/users.php">Usuários</a>
+
+            </div>
+        </div>
         <a class="space">|</a>
         <a href="php/logout.php" class="title2">
             <h7 class="title2">Sair

@@ -45,7 +45,7 @@ if ($_POST['perg10'] == '10c') {
 $teste_usuario = "SELECT usuario FROM resultados WHERE usuario='" . $_SESSION['usuario'] . "'";
 $testando_usuario = mysqli_query($sql, $teste_usuario);
 if (($testando_usuario) and ($testando_usuario->num_rows != 0)) {
-    $_SESSION['msg'] = "Você já fez esse teste";
+    //$_SESSION['msg'] = "Você já fez esse teste";
 } else {
     $result_usuario = "INSERT INTO resultados (usuario, nota, data) VALUES (
         '" . $_SESSION['usuario'] . "',
@@ -77,9 +77,17 @@ if (($testando_usuario) and ($testando_usuario->num_rows != 0)) {
         <a class="space">|</a>
         <h7 id="title">Teste Apple</h7>
         <a class="space">|</a>
-        <a href="consultar.php" class="title2">
-            <h7 class="title2">Resultados
-        </a></h7>
+        <div class="dropdown">
+            <a class="title2">
+                <h7 class="title2">Dados
+
+            </a></h7>
+            <div class="dropdown-child">
+                <a href="notas.php">Notas</a>
+                <a href="users.php">Usuários</a>
+
+            </div>
+        </div>
         <a class="space">|</a>
         <a href="logout.php" class="title2">
             <h7 class="title2">Sair

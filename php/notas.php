@@ -31,7 +31,14 @@ if (!empty($_SESSION['id'])) {
                 <h7 class="title2">Teste Apple
             </a></h7>
             <a class="space">|</a>
-            <h7 id="title">Resultados</h7>
+            <div class="dropdown">
+                <h7 id="title">Dados</h7>
+                <div class="dropdown-child">
+                    <a style="color: var(--cor-letra); transition:0; opacity:1;">Notas</a>
+                    <a href="php/users.php">Usuários</a>
+
+                </div>
+            </div>
             <a class="space">|</a>
             <a href="logout.php" class="title2">
                 <h7 class="title2">Sair
