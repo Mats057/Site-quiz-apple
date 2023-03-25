@@ -34,9 +34,7 @@ if ($btnCadUsuario) {
 		}
 	}
 
-	//var_dump($dados);
 	if (!$erro) {
-		//var_dump($dados);
 		$dados['senha'] = password_hash($dados['senha'], PASSWORD_DEFAULT);
 
 		$result_usuario = "INSERT INTO usuarios (nome, email, usuario, senha) VALUES (
@@ -54,7 +52,6 @@ if ($btnCadUsuario) {
 			$_SESSION['msg'] = "Erro ao cadastrar o usuário";
 		}
 	}
-
 }
 ?>
 <!DOCTYPE html>
@@ -67,6 +64,8 @@ if ($btnCadUsuario) {
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Cadastrar Usuário</title>
 	<link rel="stylesheet" href="../css/estilo.css" type="text/css">
+	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 
 </head>
 
@@ -85,7 +84,7 @@ if ($btnCadUsuario) {
 				<h7 class="title2">Logar
 			</a></h7>
 			<a class="space">|</a>
-			<h1 id="title">Cadastrar-se</h1>
+			<h7 id="title">Cadastrar</h7>
 		</div>
 	</header>
 	<div class="container">
@@ -93,22 +92,25 @@ if ($btnCadUsuario) {
 			<h2 id="cad">Formulário de Cadastro</h2>
 			<form method="POST" action="">
 				<fieldset>
-				</p><label style="margin-top: 20px; color: #ffffff;">Nome:</label></p>
-				<input type="text" name="nome" placeholder="Digite o nome e o sobrenome" class="form-control"><br>
+					</p><label style="margin-top: 20px; color: #ffffff;">Nome:</label></p>
+					<input type="text" name="nome" placeholder="Digite o nome e o sobrenome" class="form-control"><br>
 
-				<label style="margin-top: 20px; color: #ffffff;">E-mail:</label><p>
-				<input type="email" name="email" placeholder="Digite o seu e-mail" class="form-control"><br>
+					<label style="margin-top: 20px; color: #ffffff;">E-mail:</label>
+					<p>
+						<input type="email" name="email" placeholder="Digite o seu e-mail" class="form-control"><br>
 
-				<label style="margin-top: 20px; color: #ffffff;">Usuário:</label><p>
-				<input type="text" name="usuario" placeholder="Digite o usuário" class="form-control"><br>
+						<label style="margin-top: 20px; color: #ffffff;">Usuário:</label>
+					<p>
+						<input type="text" name="usuario" placeholder="Digite o usuário" class="form-control"><br>
 
-				<label style="margin-top: 20px; color: #ffffff;">Senha:</label><p>
-				<input type="password" name="senha" placeholder="Digite a senha" class="form-control"><br>
+						<label style="margin-top: 20px; color: #ffffff;">Senha:</label>
+					<p>
+						<input type="password" name="senha" placeholder="Digite a senha" class="form-control"><br>
 
-				<input type="submit" name="btnCadUsuario" value="Cadastrar" id="btnConfirm" /><br><br>
-				<?php
-				if (isset($_SESSION['msg'])) {
-					echo '<div class="erro-msg" style="
+						<input type="submit" name="btnCadUsuario" value="Cadastrar" id="btnConfirm" /><br><br>
+						<?php
+						if (isset($_SESSION['msg'])) {
+							echo '<div class="erro-msg" style="
 					color: red;
 					background-color: yellow;
 					border-radius: 5px;
@@ -117,15 +119,15 @@ if ($btnCadUsuario) {
 					border: 1px solid red;
 					font-size: 16px;
 					text-align: center;">' . $_SESSION['msg'] . '</div>';
-					unset($_SESSION['msg']);
-				}
-				?>
+							unset($_SESSION['msg']);
+						}
+						?>
 
 
-				<div class="row text-center" style="margin-top: 20px; color: #ffffff;">
-					Lembrou? <a href="../login.php" id="criar-conta" class="text-center">Clique aqui</a> para logar
-				</div>
-			</fieldset>
+					<div class="row text-center" style="margin-top: 20px; color: #ffffff;">
+						Lembrou? <a href="../login.php" id="criar-conta" class="text-center">Clique aqui</a> para logar
+					</div>
+				</fieldset>
 			</form>
 		</div>
 	</div>

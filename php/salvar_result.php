@@ -44,7 +44,7 @@ if ($_POST['perg10'] == '10c') {
 $teste_usuario = "SELECT usuario FROM resultados WHERE usuario='" . $_SESSION['usuario'] . "'";
 $testando_usuario = mysqli_query($sql, $teste_usuario);
 if (($testando_usuario) and ($testando_usuario->num_rows != 0)) {
-    //$_SESSION['msg'] = "Você já fez esse teste";
+    $_SESSION['msg'] = "Você já fez esse teste";
 } else {
     $result_usuario = "INSERT INTO resultados (usuario, nota) VALUES (
         '" . $_SESSION['usuario'] . "',
@@ -63,6 +63,8 @@ if (($testando_usuario) and ($testando_usuario->num_rows != 0)) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resultado</title>
     <link rel="stylesheet" href="../css/estilo.css" type="text/css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -71,7 +73,7 @@ if (($testando_usuario) and ($testando_usuario->num_rows != 0)) {
             <h7 class="title2">Sobre a Apple
         </a></h7>
         <a class="space">|</a>
-        <h1 id="title">Seu resultado</h1>
+        <h7 id="title">Teste Apple</h7>
         <a class="space">|</a>
         <a href="consultar.php" class="title2">
             <h7 class="title2">Resultados

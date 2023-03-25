@@ -15,6 +15,8 @@ if (!empty($_SESSION['id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Teste Apple</title>
     <link rel="stylesheet" href="css/estilo.css" type="text/css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -23,7 +25,7 @@ if (!empty($_SESSION['id'])) {
             <h7 class="title2">Sobre a Apple
         </a></h7>
         <a class="space">|</a>
-        <h1 id="title">Teste Apple</h1>
+        <h7 id="title">Teste Apple</h7>
         <a class="space">|</a>
         <a href="php/consultar.php" class="title2">
             <h7 class="title2">Resultados

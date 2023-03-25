@@ -8,14 +8,16 @@ session_start();
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple</title>
+    <title>Sobre a Apple</title>
     <link rel="stylesheet" href="css/estilo.css" type="text/css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <header>
         <div id="options">
-            <h1 id="title">Sobre a Apple</h1>
+            <h7 id="title">Sobre a Apple</h7>
             <a class="space">|</a>
             <a href="formp.php" class="title2">
                 <h7 class="title2">Teste Apple
@@ -24,10 +26,10 @@ session_start();
             <a href="<?php
                         if (!empty($_SESSION['id'])) {
                             echo "php/consultar.php";
-                            } else {
+                        } else {
                             echo "login.php";
-                            }
-                            ?>" class="title2">
+                        }
+                        ?>" class="title2">
                 <h7 class="title2" id="logar"><?php
                                                 if (!empty($_SESSION['id'])) {
                                                     echo "Resultados";
@@ -40,17 +42,17 @@ session_start();
             <a href="<?php
                         if (!empty($_SESSION['id'])) {
                             echo "php/logout.php";
-                            } else {
+                        } else {
                             echo "php/cadastrar.php";
-                            }
-                            ?>" class="title2">
+                        }
+                        ?>" class="title2">
                 <h7 class="title2"><?php
-                                                if (!empty($_SESSION['id'])) {
-                                                    echo "Sair";
-                                                } else {
-                                                    echo "Cadastrar-se";
-                                                }
-                                                ?>
+                                    if (!empty($_SESSION['id'])) {
+                                        echo "Sair";
+                                    } else {
+                                        echo "Cadastrar";
+                                    }
+                                    ?>
             </a></h7>
         </div>
     </header>

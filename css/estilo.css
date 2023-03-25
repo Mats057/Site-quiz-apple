@@ -3,10 +3,10 @@
   src: url("SFUIText-Regular.otf") format("truetype");
 }
 :root {
-  --cor-fundo: #1c1c1e;
-  --cor-letra: #ffffff;
-  --cor-letra2: #a7a7aa;
-  --cor-menu:#333333;
+  --cor-fundo: #000000;
+  --cor-letra: #f4f4f6;
+  --cor-letra2: #9f9f9f;
+  --cor-menu:#171718;
   --cor-apple: #007aff;
 }
 body {
@@ -22,14 +22,15 @@ body {
 
 header {
   background-color: var(--cor-menu);
-  color: #b9b9bb;
+  color: var(--cor-letra);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 25px 20% 20px;
+  margin: 5px 20% 20px;
   border-radius: 18px;
-  border: var(--cor-apple) 2px solid;
+  padding: 20px;
+  border: var(--cor-letra) 2px solid;
 }
 
 #title {
@@ -70,7 +71,7 @@ header {
 .space {
   font-size: 40px;
   margin: auto 20px;
-  color: var(--cor-apple);
+  color: var(--cor-letra);
 }
 
 #options {
@@ -206,7 +207,7 @@ header {
   background-color: var(--cor-fundo);
   margin: 20px auto;
   border-radius: 20px;
-  border: var(--cor-apple) 2px solid;
+  border: var(--cor-letra) 2px solid;
   display: inline-block;
   line-height: 2.0;
   vertical-align: middle;
@@ -229,7 +230,7 @@ header {
   border-radius: 20px;
   padding: 5px;
   background: var(--cor-menu);
-  border: var(--cor-apple) 2px solid;
+  border: var(--cor-letra) 2px solid;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 #pontos{
