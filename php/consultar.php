@@ -37,7 +37,19 @@ if (!empty($_SESSION['id'])) {
                 <h7 class="title2">Sair
             </a></h7>
         </header>
-
+        <main>
+            <?php
+            include_once("conexao.php");
+            $result_usuario = "SELECT * FROM resultados";
+            $resultado_usuario = mysqli_query($sql, $result_usuario);
+            while ($row_usuario = mysqli_fetch_assoc($resultado_usuario)) {
+                echo '<div id="respostas">';
+                echo '<h2 class="text-center">Usuário: ' . $row_usuario['usuario'] . '</h2>';
+                echo '<h2 class="text-center">Nota: ' . $row_usuario['nota'] . '</h2>';
+                echo '<h2 class="text-center">Data: ' . $row_usuario['data'] . '</h2>';
+                echo '</div>';
+            }
+            ?>
     </body>
 
 </html>

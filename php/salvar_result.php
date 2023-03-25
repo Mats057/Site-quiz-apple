@@ -8,7 +8,8 @@ if (!empty($_SESSION['id']) && !empty($_POST)) {
     echo '<h2 class="text-center" id="restrita">Faça login antes de tentar entrar!</h2>';
     header("Location: ../login.php");
 }
-
+date_default_timezone_set("America/Sao_Paulo");
+$data = date('d/m/Y H:i:s');
 $pontos = 0;
 if ($_POST['perg1'] == '1c') {
     $pontos++;
@@ -46,9 +47,10 @@ $testando_usuario = mysqli_query($sql, $teste_usuario);
 if (($testando_usuario) and ($testando_usuario->num_rows != 0)) {
     $_SESSION['msg'] = "Você já fez esse teste";
 } else {
-    $result_usuario = "INSERT INTO resultados (usuario, nota) VALUES (
+    $result_usuario = "INSERT INTO resultados (usuario, nota, data) VALUES (
         '" . $_SESSION['usuario'] . "',
-        '" . $pontos . "'
+        '" . $pontos . "',
+        '" . $data . "'
         )";
     $resultado_usuario = mysqli_query($sql, $result_usuario);
     unset($_SESSION['msg']);
