@@ -35,7 +35,7 @@ if (!empty($_SESSION['id'])) {
                 <h7 id="title">Dados</h7>
                 <div class="dropdown-child">
                     <a style="color: var(--cor-letra); transition:0; opacity:1;">Notas</a>
-                    <a href="php/users.php">Usuários</a>
+                    <a href="users.php">Usuários</a>
 
                 </div>
             </div>
@@ -55,7 +55,7 @@ if (!empty($_SESSION['id'])) {
                 echo '<h2 class="text-center">Nota: ' . $row_usuario['nota'] . '</h2>';
                 echo '<h2 class="text-center">Data: ' . $row_usuario['data'] . '</h2>';
                 echo '<a id="btnEdit" href="editNota.php?usuario='.$row_usuario['usuario'].'">Editar</a>';
-                echo '<a id="btnApagar" href="edit.php">Apagar</a>';
+                echo '<a id="btnApagar" href="apagarNota.php?usuario=' . $row_usuario['usuario'] . '">Apagar</a>';
                 echo '</div>';
             }
             ?>
