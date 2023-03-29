@@ -3,7 +3,7 @@ session_start();
 if (!empty($_SESSION['id'])) {
 } else {
     echo '<h2 class="text-center" id="restrita">Faça login antes de tentar entrar!</h2>';
-    header("Location: login.php");
+    header("Location: ../login.php");
 }
 ?>
 <!DOCTYPE html>
@@ -54,6 +54,8 @@ if (!empty($_SESSION['id'])) {
                 echo '<h2 class="text-center">Usuário: ' . $row_usuario['usuario'] . '</h2>';
                 echo '<h2 class="text-center">Nota: ' . $row_usuario['nota'] . '</h2>';
                 echo '<h2 class="text-center">Data: ' . $row_usuario['data'] . '</h2>';
+                echo '<a id="btnEdit" href="editNota.php?usuario='.$row_usuario['usuario'].'">Editar</a>';
+                echo '<a id="btnApagar" href="edit.php">Apagar</a>';
                 echo '</div>';
             }
             ?>

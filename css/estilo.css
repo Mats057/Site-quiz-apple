@@ -6,7 +6,7 @@
   --cor-fundo: #000000;
   --cor-letra: #f4f4f6;
   --cor-letra2: #9f9f9f;
-  --cor-menu:#171718;
+  --cor-menu:#1f1f20;
   --cor-apple: #007aff;
 }
 body {
@@ -262,4 +262,41 @@ header {
 .dropdown-child a:hover {
     transition: 0.5s;
     opacity: 0.7;
+}
+#btnEdit {
+  background-color: #4128d1;
+  margin-top: 20px;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-bottom: -20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+#btnApagar {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  margin: 12px;
+  background-color: #d12c38;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  text-decoration: none;
+}
+#btnApagar:hover, #btnEdit:hover {
+  opacity: 0.7;
+  transition: 0.2s;
+}
+.form-control{
+  text-align: center;
+}
+.form-control:disabled{
+  color: var(--cor-letra);
+  background-color: var(--cor-letra2);
 }
