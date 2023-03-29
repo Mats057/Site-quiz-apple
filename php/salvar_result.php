@@ -45,7 +45,7 @@ if ($_POST['perg10'] == '10c') {
 $teste_usuario = "SELECT usuario FROM resultados WHERE usuario='" . $_SESSION['usuario'] . "'";
 $testando_usuario = mysqli_query($sql, $teste_usuario);
 if (($testando_usuario) and ($testando_usuario->num_rows != 0)) {
-    //$_SESSION['msg'] = "Você já fez esse teste";
+    $_SESSION['msg'] = "Você já fez esse teste";
 } else {
     $result_usuario = "INSERT INTO resultados (usuario, nota, data) VALUES (
         '" . $_SESSION['usuario'] . "',
