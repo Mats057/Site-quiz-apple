@@ -71,23 +71,22 @@ if (!empty($_SESSION['id'])) {
         <div class="container">
             <div class="form-signin">
                 <h2 id="cad">Editar notas de <?php echo $usuario ?></h2>
-                <form method="POST" action="">
+                <form method="POST" action="saveNotaEdit.php">
                     <fieldset>
                         </p><label style="margin-top: 20px; color: #ffffff;">ID (Impossível alterar):</label></p>
-                        <input type="text" name="id" value="<?php echo $id ?>" class="form-control" disabled><br>
+                        <input type="text" name="id" value="<?php echo $id ?>" class="form-control" readonly><br>
 
                         <label style="margin-top: 20px; color: #ffffff;">Usuário (Alterar nos usuários):</label>
                         <p>
-                            <input type="text" name="usuario" class="form-control" value="<?php echo $usuario ?>" class="form-control" disabled><br>
+                            <input type="text" name="usuario" class="form-control" value="<?php echo $usuario ?>" class="form-control" readonly><br>
 
                             <label style="margin-top: 20px; color: #ffffff;">Nota:</label>
                         <p>
-                            <input type="number" min="0" max="10" name="nota" value="<?php echo $nota3 ?>" placeholder="Digite a nota do usuário" class="form-control"><br>
+                            <input type="number" min="0" max="10" name="nota" value="<?php echo $nota ?>" placeholder="Digite a nota do usuário" class="form-control"><br>
 
                             <label style="margin-top: 20px; color: #ffffff;">Data:</label>
                         <p>
                             <input type="text" name="data" value="<?php echo $data ?>" placeholder="Digite data da prova" class="form-control"><br>
-
                             <input type="submit" name="btnEditUsuario" value="Editar" id="btnEdit" /><br><br>
                             <?php
                             if (isset($_SESSION['msg'])) {

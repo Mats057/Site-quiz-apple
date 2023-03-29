@@ -296,7 +296,7 @@ header {
 .form-control{
   text-align: center;
 }
-.form-control:disabled{
+.form-control:read-only{
   color: var(--cor-letra);
   background-color: var(--cor-letra2);
 }
