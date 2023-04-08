@@ -14,6 +14,7 @@ session_start();
     <title>Login</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="js/dark.js" defer></script>
 </head>
 
 <body>

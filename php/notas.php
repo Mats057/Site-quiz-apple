@@ -17,6 +17,7 @@ if (!empty($_SESSION['id'])) {
     <link rel="stylesheet" href="../css/estilo.css" type="text/css">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <script src="../js/dark.js" defer></script>
 </head>
 
 <body>
@@ -40,8 +41,8 @@ if (!empty($_SESSION['id'])) {
                 </div>
             </div>
             <a class="space">|</a>
-            <a href="logout.php" class="title2">
-                <h7 class="title2">Sair
+            <a href="conta.php" class="title2">
+                <h7 class="title2">Meu Perfil
             </a></h7>
         </header>
         <main>
@@ -54,7 +55,7 @@ if (!empty($_SESSION['id'])) {
                 echo '<h2 class="text-center">Usuário: ' . $row_usuario['usuario'] . '</h2>';
                 echo '<h2 class="text-center">Nota: ' . $row_usuario['nota'] . '</h2>';
                 echo '<h2 class="text-center">Data: ' . $row_usuario['data'] . '</h2>';
-                echo '<a id="btnEdit" href="editNota.php?usuario='.$row_usuario['usuario'].'">Editar</a>';
+                echo '<a id="btnEdit" href="editNota.php?usuario=' . $row_usuario['usuario'] . '">Editar</a>';
                 echo '<a id="btnApagar" href="apagarNota.php?usuario=' . $row_usuario['usuario'] . '">Apagar</a>';
                 echo '</div>';
             }

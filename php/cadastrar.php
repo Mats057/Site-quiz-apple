@@ -66,6 +66,7 @@ if ($btnCadUsuario) {
 	<link rel="stylesheet" href="../css/estilo.css" type="text/css">
 	<link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+	<script src="../js/dark.js" defer></script>
 
 </head>
 

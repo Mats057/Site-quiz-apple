@@ -2,12 +2,22 @@
   font-family: "SFRegular";
   src: url("SFUIText-Regular.otf") format("truetype");
 }
+
 :root {
-  --cor-fundo: #000000;
-  --cor-letra: #f4f4f6;
-  --cor-letra2: #9f9f9f;
-  --cor-menu:#1f1f20;
-  --cor-apple: #007aff;
+  --cor-fundo: ##f9f9f9;
+  --cor-letra: #333333;
+  --cor-letra2: #7f7f7f;
+  --cor-menu:#e6e6e6;
+  --cor-aux:#BEC3C7;
+  --cor-apple: #1e90ff;
+}
+:root.dark{
+  --cor-fundo: #1f1f1f;
+  --cor-letra: #e1e1e1;
+  --cor-letra2: #b3b3b3;
+  --cor-aux:#BEC3C7;
+  --cor-menu:#2c2c2c;
+  --cor-apple: #0071c5;
 }
 body {
   background-color: var(--cor-fundo);
@@ -126,6 +136,9 @@ header {
 #btnConfirm:hover {
   background-color: #347536;
   transition: 0.2s;
+}
+#questoes{
+  color: var(--cor-letra);
 }
 
 #cad {
@@ -264,11 +277,14 @@ header {
     opacity: 0.7;
 }
 #btnEdit {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
   background-color: #4128d1;
-  margin-top: 20px;
   color: white;
   padding: 10px 20px;
   border: none;
+  margin: auto 10px;
   margin-bottom: -20px;
   border-radius: 5px;
   cursor: pointer;
@@ -279,9 +295,9 @@ header {
   -webkit-appearance: button;
   -moz-appearance: button;
   appearance: button;
-  margin: 12px;
   background-color: #d12c38;
   color: white;
+  margin: auto 10px;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -299,4 +315,27 @@ header {
 .form-control:read-only{
   color: var(--cor-letra);
   background-color: var(--cor-letra2);
+}
+#perfil {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  color: var(--cor-letra);
+  margin: 50px 20%;
+  border-radius: 20px;
+  padding: 20px;
+  background: var(--cor-menu);
+  border: var(--cor-letra) 2px solid;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+#theme{
+  margin: 50px auto;
+}
+.ações{
+  margin: -20px 20px auto;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }

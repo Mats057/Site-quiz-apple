@@ -67,6 +67,7 @@ if (($testando_usuario) and ($testando_usuario->num_rows != 0)) {
     <link rel="stylesheet" href="../css/estilo.css" type="text/css">
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="../img/favicon.ico" type="image/x-icon">
+    <script src="../js/dark.js" defer></script>
 </head>
 
 <body>
@@ -89,8 +90,8 @@ if (($testando_usuario) and ($testando_usuario->num_rows != 0)) {
             </div>
         </div>
         <a class="space">|</a>
-        <a href="logout.php" class="title2">
-            <h7 class="title2">Sair
+        <a href="conta.php" class="title2">
+            <h7 class="title2">Meu Perfil
         </a></h7>
     </header>
     <main> <?php

@@ -10,8 +10,9 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre a Apple</title>
     <link rel="stylesheet" href="css/estilo.css" type="text/css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.Appleico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <script src="js/dark.js" defer></script>
 </head>
 
 <body>
@@ -41,27 +42,27 @@ session_start();
                 </a></h7>
                 <?php
                 if (!empty($_SESSION['id'])) {
-                echo '<div class="dropdown-child">
+                    echo '<div class="dropdown-child">
                     <a href="php/notas.php">Notas</a>
                     <a href="php/users.php">Usuários</a>
                     </div>';
                 } else {
                     echo '';
-                }?>
+                } ?>
             </div>
 
 
             <a class="space">|</a>
             <a href="<?php
                         if (!empty($_SESSION['id'])) {
-                            echo "php/logout.php";
+                            echo "php/conta.php";
                         } else {
                             echo "php/cadastrar.php";
                         }
                         ?>" class="title2">
                 <h7 class="title2"><?php
                                     if (!empty($_SESSION['id'])) {
-                                        echo "Sair";
+                                        echo "Meu Perfil";
                                     } else {
                                         echo "Cadastrar";
                                     }
