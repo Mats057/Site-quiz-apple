@@ -11,7 +11,9 @@ function loadTheme() {
 
   if (darkMode === "1") {
     toggleDarkMode();
-    changeThemeBtn.checked = false;
+    if (document.location.pathname.endsWith("/conta.php")) {
+      changeThemeBtn.checked = false;
+    }
   }
 }
 

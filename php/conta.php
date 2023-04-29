@@ -59,15 +59,19 @@ if (!empty($_SESSION['id'])) {
                 </div>
             </div>
             <div class="ações">
+                <h2>Sair da conta:</h2>
+                <a href="logout.php" id="btnApagar">Sair</a>
+            </div>
+            <div class="ações">
                 <h2>Editar conta:</h2>
                 <?php
                 echo '<a href="editUsers.php?usuario=' . $_SESSION['usuario'] . '" id="btnEdit">Editar</a>';
                 ?>
             </div>
             <div class="ações">
-                <h2>Apagar conta:</h2>
+                <h2>Excluir conta:</h2>
                 <?php
-                echo '<a href="apagarUsers.php?usuario=' . $_SESSION['usuario'] . '" id="btnApagar">Apagar</a>';
+                    echo '<a href="apagarUsers.php?usuario=' . $_SESSION['usuario'] . '" id="btnApagar" onclick="return confirm(\'Tem certeza que deseja excluir? Essa ação é irreversível\')">Excluir</a>';
                 ?>
             </div>
     </main>

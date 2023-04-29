@@ -40,9 +40,9 @@ session_start();
             <h1 id="cad">Formulário de login</h1>
             <form action="php/valida.php" method="post">
                 <fieldset>
-                    <p><label for="usuario" style="margin-top: 20px; color: #ffffff;">Usuário:</label></p>
+                    <p><label for="usuario" class="label">Usuário:</label></p>
                     <input type="text" name="usuario" placeholder="Digite o seu usuario" size="30">
-                    <label for="senha" style="margin-top: 20px; color: #ffffff;">Senha:</label>
+                    <label for="senha" class="label">Senha:</label>
                     <p>
                         <input type="password" name="senha" placeholder="Digite a sua senha" size="30">
                         <input type="submit" id="btnConfirm" name="acessar" value="Acessar">
@@ -60,9 +60,9 @@ session_start();
                             unset($_SESSION['msg']);
                         }
                         ?>
-                    <h4 class="row text-center" style="margin-top: 20px; color: #ffffff;">Ainda não possui uma conta?
+                    <h4 class="label">Ainda não possui uma conta?
                     </h4>
-                    <a href="php/cadastrar.php" id="criar-conta" class="text-center">Clique aqui e crie uma grátis</a>
+                    <a href=" php/cadastrar.php" id="criar-conta" class="text-center">Clique aqui e crie uma grátis</a>
                 </fieldset>
             </form>
         </div>
