@@ -9,7 +9,7 @@
         
         if((!empty($usuario)) and (!empty($senha))){
 
-            $result_usuario = "select id, nome, email, senha from usuarios where usuario='$usuario' LIMIT 1";
+            $result_usuario = "select id, nome, email, senha, foto from usuarios where usuario='$usuario' LIMIT 1";
             $resultado_usuario = mysqli_query($sql, $result_usuario);
             if($result_usuario){ 
                 $row_usuario = mysqli_fetch_assoc($resultado_usuario);
@@ -18,6 +18,7 @@
                     $_SESSION['usuario'] = $usuario;
                     $_SESSION['nome'] = $row_usuario['nome'];
                     $_SESSION['email'] = $row_usuario['email'];
+                    $_SESSION['foto'] = $row_usuario['foto'];
                     header("Location: ../formp.php");
 
                 }else{
