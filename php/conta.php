@@ -58,7 +58,10 @@ if (!empty($_SESSION['id'])) {
                     <?php
                     echo '<img src="../img/' . $_SESSION['foto'] . '" alt="Foto de perfil" id="foto">';
                     ?><br>
-                    <input type="file" name="nova_imagem" id="nova_imagem" accept="image/*" onchange="enviarNovaImagem()">
+                    <div class="upload">
+                        <label class="custom-file-upload" for="nova_imagem">Selecionar arquivo</label>
+                        <input type="file" name="nova_imagem" id="nova_imagem" accept="image/*" onchange="enviarNovaImagem()">
+                    </div>
                     <script>
                         function enviarNovaImagem() {
                             var formData = new FormData();

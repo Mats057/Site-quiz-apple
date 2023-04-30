@@ -372,9 +372,40 @@ header {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 #foto{
+  margin-top: -20px;
   border-radius: 100%;
   width: 200px;
   height: 200px;
   max-width: 200px;
   max-height: 200px;
+}
+
+.custom-file-upload {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: -20px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  text-align: center;
+  background-color: var(--cor-apple);
+  border-color: #2e6da4;
+  border-radius: 4px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.custom-file-upload:hover {
+  opacity: 0.7;
+  border-color: #204d74;
+}
+
+
+.upload input[type="file"] {
+  display: none;
 }
