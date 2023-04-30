@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Mar 29, 2023 at 07:26 PM
+-- Generation Time: Apr 30, 2023 at 12:40 AM
 -- Server version: 8.0.30
 -- PHP Version: 8.1.10
 
@@ -39,8 +39,7 @@ CREATE TABLE `resultados` (
 --
 
 INSERT INTO `resultados` (`id`, `usuario`, `nota`, `data`) VALUES
-(44, 'Luriclinto', 2, '25/03/2023 11:52:06'),
-(45, 'Mats', 7, '29/03/2023 15:49:45');
+(44, 'Luriclinto', 2, '25/03/2023 11:52:06');
 
 -- --------------------------------------------------------
 
@@ -53,18 +52,18 @@ CREATE TABLE `usuarios` (
   `nome` varchar(255) NOT NULL,
   `email` varchar(255) NOT NULL,
   `usuario` varchar(255) NOT NULL,
-  `senha` varchar(255) NOT NULL
+  `senha` varchar(255) NOT NULL,
+  `foto` varchar(255) NOT NULL DEFAULT 'default.jpg'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `usuarios`
 --
 
-INSERT INTO `usuarios` (`id`, `nome`, `email`, `usuario`, `senha`) VALUES
-(1, 'Matheus Queiroz', 'zumbi@gmail.com', 'Mats', '$2y$10$/zIRaRYqnb8QHZBHB0oe.e7fiDPCxGC10Rs6NwX1264i7dsDxNxJK'),
-(7, 'belto', 'lurel@hdjslk.com', 'laris', '$2y$10$2VVesdj9/9hI2SSoxSSP2OQ4soqyHlJtw3NTiOuszPqa30Co9cA5O'),
-(8, 'claudio', 'rtyhg@gma.com', 'Luriclinto', '$2y$10$4gl5TsbBi2BpZgu52rP/zOf.DUXm/8M.GwWHyXmdF4KGJhAQ0.h9G'),
-(9, 'lares', 'fsdggdnm@gmail.com', 'lilas', '$2y$10$s4allx/uNRtkJZ0GtcmLUuKSOnxaSlksNHMV66wlQ3CEnJX1LT.pi');
+INSERT INTO `usuarios` (`id`, `nome`, `email`, `usuario`, `senha`, `foto`) VALUES
+(7, 'belto', 'lurel@hdjslk.com', 'laris', '$2y$10$2VVesdj9/9hI2SSoxSSP2OQ4soqyHlJtw3NTiOuszPqa30Co9cA5O', 'default.jpg'),
+(8, 'claudio', 'rtyhg@gma.com', 'Luriclinto', '$2y$10$4gl5TsbBi2BpZgu52rP/zOf.DUXm/8M.GwWHyXmdF4KGJhAQ0.h9G', 'default.jpg'),
+(11, 'Matheus Queiroz', 'zumbi@gmail.com', 'Mats', '$2y$10$zxdIUXXK9FdymcO7YD0lROpxtD8iXM7cRKUyHx1oHH.TLRA3fZFo.', 'fc46261b38b6c4aa33a095be6fdf84c8.jpg');
 
 --
 -- Indexes for dumped tables
@@ -94,13 +93,13 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT for table `resultados`
 --
 ALTER TABLE `resultados`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=47;
 
 --
 -- AUTO_INCREMENT for table `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- Constraints for dumped tables
