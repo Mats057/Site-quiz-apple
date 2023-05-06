@@ -31,13 +31,11 @@ if (!empty($_SESSION['id'])) {
     <header>
         <div id="options">
             <a href="../index.php" class="title2">
-                <h7 class="title2">Sobre a Apple
-            </a></h7>
-            <a class="space">|</a>
+                Sobre a Apple
+            </a>
             <a href="../formp.php" class="title2">
-                <h7 class="title2">Teste Apple
-            </a></h7>
-            <a class="space">|</a>
+                Teste Apple
+            </a>
             <div class="dropdown">
                 <h7 id="title">Dados</h7>
                 <div class="dropdown-child">
@@ -46,10 +44,9 @@ if (!empty($_SESSION['id'])) {
 
                 </div>
             </div>
-            <a class="space">|</a>
             <a href="conta.php" class="title2">
-                <h7 class="title2">Meu Perfil
-            </a></h7>
+                Meu Perfil
+            </a>
         </div>
     </header>
     <main>

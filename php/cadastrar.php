@@ -74,17 +74,14 @@ if ($btnCadUsuario) {
 	<header>
 		<div id="options">
 			<a href="../index.php" class="title2">
-				<h7 class="title2">Sobre a Apple
-			</a></h7>
-			<a class="space">|</a>
+				Sobre a Apple
+			</a>
 			<a href="../formp.php" class="title2">
-				<h7 class="title2">Teste Apple
-			</a></h7>
-			<a class="space">|</a>
+				Teste Apple
+			</a>
 			<a href="../login.php" class="title2">
-				<h7 class="title2">Logar
-			</a></h7>
-			<a class="space">|</a>
+				Logar
+			</a>
 			<h7 id="title">Cadastrar</h7>
 		</div>
 	</header>

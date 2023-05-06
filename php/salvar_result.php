@@ -75,9 +75,7 @@ if (($testando_usuario) and ($testando_usuario->num_rows != 0)) {
         <a href="../index.php" class="title2">
             <h7 class="title2">Sobre a Apple
         </a></h7>
-        <a class="space">|</a>
         <h7 id="title">Teste Apple</h7>
-        <a class="space">|</a>
         <div class="dropdown">
             <a class="title2">
                 <h7 class="title2">Dados
@@ -89,7 +87,6 @@ if (($testando_usuario) and ($testando_usuario->num_rows != 0)) {
 
             </div>
         </div>
-        <a class="space">|</a>
         <a href="conta.php" class="title2">
             <h7 class="title2">Meu Perfil
         </a></h7>

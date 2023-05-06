@@ -19,6 +19,9 @@
   --cor-menu:#2c2c2c;
   --cor-apple: #0071c5;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   background-color: var(--cor-fundo);
   margin: 0;
@@ -37,28 +40,24 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 5px 20% 20px;
-  border-radius: 18px;
-  padding: 20px;
-  border: var(--cor-letra) 2px solid;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
 #title {
   text-align: center;
-  font-size: 35px;
+  font-size: 25px;
+  margin: 0 20px;
 }
 
 .title2 {
   text-align: center;
-  font-size: 35px;
+  font-size: 25px;
   text-decoration: none;
   color: var(--cor-letra2);
+  margin: 0 20px;
 }
 .title2:hover {
-  text-align: center;
-  font-size: 35px;
-  text-decoration: none;
-  color: var(--cor-letra2);
   transition: 0.5s;
   opacity: 0.7;
 }
@@ -71,29 +70,22 @@ header {
   align-items: center;
   text-align: justify;
   flex-direction: column;
-  margin: 40px 300px;
+  margin: 40px 10vw;
 }
 .image {
-  max-width: 50%;
+  max-width: 40vw;
   margin-bottom: 40px;
-}
-
-.space {
-  font-size: 40px;
-  margin: auto 20px;
-  color: var(--cor-letra);
 }
 
 #options {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
+  text-align: center;
+  margin: 0 8vw;
 }
 
 @media (max-width: 768px) {
-  .space {
-    display: none;
-  }
 
   #header {
     flex-direction: column;
@@ -297,7 +289,7 @@ header {
   appearance: button;
   background-color: #d12c38;
   color: white;
-  margin: auto 10px;
+  margin: auto 10px 10px;
   padding: 10px 20px;
   border: none;
   border-radius: 5px;

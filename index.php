@@ -19,11 +19,9 @@ session_start();
     <header>
         <div id="options">
             <h7 id="title">Sobre a Apple</h7>
-            <a class="space">|</a>
             <a href="formp.php" class="title2">
-                <h7 class="title2">Teste Apple
-            </a></h7>
-            <a class="space">|</a>
+               Teste Apple
+            </a>
             <div class="dropdown">
                 <a href="<?php
                             if (!empty($_SESSION['id'])) {
@@ -32,14 +30,14 @@ session_start();
                                 echo "login.php";
                             }
                             ?>" class="title2">
-                    <h7 class="title2" id="logar"><?php
-                                                    if (!empty($_SESSION['id'])) {
-                                                        echo "Dados";
-                                                    } else {
-                                                        echo "Logar";
-                                                    }
-                                                    ?>
-                </a></h7>
+                    <?php
+                    if (!empty($_SESSION['id'])) {
+                        echo "Dados";
+                    } else {
+                        echo "Logar";
+                    }
+                    ?>
+                </a>
                 <?php
                 if (!empty($_SESSION['id'])) {
                     echo '<div class="dropdown-child">
@@ -50,9 +48,6 @@ session_start();
                     echo '';
                 } ?>
             </div>
-
-
-            <a class="space">|</a>
             <a href="<?php
                         if (!empty($_SESSION['id'])) {
                             echo "php/conta.php";
@@ -60,14 +55,14 @@ session_start();
                             echo "php/cadastrar.php";
                         }
                         ?>" class="title2">
-                <h7 class="title2"><?php
+                <?php
                                     if (!empty($_SESSION['id'])) {
                                         echo "Meu Perfil";
                                     } else {
                                         echo "Cadastrar";
                                     }
                                     ?>
-            </a></h7>
+            </a>
         </div>
     </header>
     <main>

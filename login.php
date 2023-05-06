@@ -21,18 +21,15 @@ session_start();
     <header>
         <div id="options">
             <a href="index.php" class="title2">
-                <h7 class="title2">Sobre a Apple
-            </a></h7>
-            <a class="space">|</a>
+                Sobre a Apple
+            </a>
             <a href="formp.php" class="title2">
-                <h7 class="title2">Teste Apple
-            </a></h7>
-            <a class="space">|</a>
+               Teste Apple
+            </a>
             <h7 id="title">Logar</h7>
-            <a class="space">|</a>
             <a href="php/cadastrar.php" class="title2">
-                <h7 class="title2">Cadastrar
-            </a></h7>
+                Cadastrar
+            </a>
         </div>
     </header>
     <main class="container">

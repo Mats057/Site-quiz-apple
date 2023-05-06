@@ -23,26 +23,22 @@ if (!empty($_SESSION['id'])) {
 <body>
     <header>
         <a href="index.php" class="title2">
-            <h7 class="title2">Sobre a Apple
-        </a></h7>
-        <a class="space">|</a>
+           Sobre a Apple
+        </a>
         <h7 id="title">Teste Apple</h7>
-        <a class="space">|</a>
         <div class="dropdown">
             <a class="title2">
-                <h7 class="title2">Dados
-
-            </a></h7>
+                Dados
+            </a>
             <div class="dropdown-child">
                 <a href="php/notas.php">Notas</a>
                 <a href="php/users.php">Usuários</a>
 
             </div>
         </div>
-        <a class="space">|</a>
         <a href="php/conta.php" class="title2">
-            <h7 class="title2">Meu Perfil
-        </a></h7>
+           Meu Perfil
+        </a>
     </header>
     <main> <?php
             echo '<h2 class="text-center" id="restrita">Olá ' . $_SESSION['nome'] . ', Seja bem vindo!</h2>';
