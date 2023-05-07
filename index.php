@@ -19,9 +19,7 @@ session_start();
     <header>
         <div id="options">
             <h7 id="title">Sobre a Apple</h7>
-            <a href="formp.php" class="title2">
-               Teste Apple
-            </a>
+            <a href="formp.php" class="title2">Teste Apple</a>
             <div class="dropdown">
                 <a href="<?php
                             if (!empty($_SESSION['id'])) {
@@ -45,7 +43,6 @@ session_start();
                     <a href="php/users.php">Usuários</a>
                     </div>';
                 } else {
-                    echo '';
                 } ?>
             </div>
             <a href="<?php
@@ -56,17 +53,22 @@ session_start();
                         }
                         ?>" class="title2">
                 <?php
-                                    if (!empty($_SESSION['id'])) {
-                                        echo "Meu Perfil";
-                                    } else {
-                                        echo "Cadastrar";
-                                    }
-                                    ?>
-            </a>
+                if (!empty($_SESSION['id'])) {
+                    echo "Meu Perfil";
+                } else {
+                    echo "Cadastrar";
+                }
+                ?></a>
+            <?php
+            if (!empty($_SESSION['id'])) {
+                echo "<a href='php/sair.php' class='title2' id='sair'>Sair</a>";
+            } else {
+            }
+            ?>
         </div>
     </header>
     <main>
-        <div id="intro">A Apple Inc. é uma empresa multinacional de tecnologia sediada em Cupertino, Califórnia, nos
+        <div id="textos">A Apple Inc. é uma empresa multinacional de tecnologia sediada em Cupertino, Califórnia, nos
             Estados Unidos. Fundada em 1976 por Steve Jobs, Steve Wozniak e Ronald Wayne, a empresa é amplamente
             reconhecida como uma das principais impulsionadoras da revolução da computação pessoal.
 

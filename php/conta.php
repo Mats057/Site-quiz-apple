@@ -26,24 +26,19 @@ if (!empty($_SESSION['id'])) {
 <body>
     <header>
         <div id="options">
-            <a href="../index.php" class="title2">
-                Sobre a Apple
-            </a>
-            <a href="../formp.php" class="title2">
-                Teste Apple
-            </a>
+            <a href="../index.php" class="title2">Sobre a Apple</a>
+            <a href="../formp.php" class="title2">Teste Apple</a>
             <div class="dropdown">
-                <a class="title2">
-                    Dados
-
-                </a>
+                <a class="title2">Dados</a>
                 <div class="dropdown-child">
                     <a href="notas.php">Notas</a>
                     <a href="users.php">Usuários</a>
-
                 </div>
             </div>
             <h7 id="title">Meu Perfil</h7>
+            <a href="php/logout.php" class="title2" id="sair">
+                Sair
+            </a>
         </div>
     </header>
     <main>
@@ -101,10 +96,6 @@ if (!empty($_SESSION['id'])) {
                 <div class="wrapper">
                     <input type="checkbox" name="checkbox" class="switch" id="change-theme" checked>
                 </div>
-            </div>
-            <div class="ações">
-                <h2>Sair da conta:</h2>
-                <a href="logout.php" id="btnApagar">Sair</a>
             </div>
             <div class="ações">
                 <h2>Editar conta:</h2>

@@ -24,23 +24,28 @@ if (!empty($_SESSION['id'])) {
 
     <body>
         <header>
-            <a href="../index.php" class="title2">
-                Sobre a Apple
-            </a>
-            <a href="../formp.php" class="title2">
-               Teste Apple
-            </a>
-            <div class="dropdown">
-                <h7 id="title">Dados</h7>
-                <div class="dropdown-child">
-                    <a href="notas.php">Notas</a>
-                    <a style="color: var(--cor-letra); transition:0; opacity:1;">Usuários</a>
+            <div id="options">
+                <a href="../index.php" class="title2">
+                    Sobre a Apple
+                </a>
+                <a href="../formp.php" class="title2">
+                    Teste Apple
+                </a>
+                <div class="dropdown">
+                    <h7 id="title">Dados</h7>
+                    <div class="dropdown-child">
+                        <a href="notas.php">Notas</a>
+                        <a style="color: var(--cor-letra); transition:0; opacity:1;">Usuários</a>
 
+                    </div>
                 </div>
+                <a href="conta.php" class="title2">
+                    Meu Perfil
+                </a>
+                <a href="../php/logout.php" class="title2" id="sair">
+                    Sair
+                </a>
             </div>
-            <a href="conta.php" class="title2">
-                Meu Perfil
-            </a>
         </header>
         <main>
             <?php

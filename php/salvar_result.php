@@ -72,24 +72,28 @@ if (($testando_usuario) and ($testando_usuario->num_rows != 0)) {
 
 <body>
     <header>
-        <a href="../index.php" class="title2">
-            <h7 class="title2">Sobre a Apple
-        </a></h7>
-        <h7 id="title">Teste Apple</h7>
-        <div class="dropdown">
-            <a class="title2">
-                <h7 class="title2">Dados
+        <div id="options">
+            <a href="../index.php" class="title2">
+                Sobre a Apple
+            </a>
+            <h7 id="title">Teste Apple</h7>
+            <div class="dropdown">
+                <a class="title2">
+                    Dados
+                </a>
+                <div class="dropdown-child">
+                    <a href="notas.php">Notas</a>
+                    <a href="users.php">Usuários</a>
 
-            </a></h7>
-            <div class="dropdown-child">
-                <a href="notas.php">Notas</a>
-                <a href="users.php">Usuários</a>
-
+                </div>
             </div>
+            <a href="conta.php" class="title2">
+                Meu Perfil
+            </a>
+            <a href="php/logout.php" class="title2" id="sair">
+                Sair
+            </a>
         </div>
-        <a href="conta.php" class="title2">
-            <h7 class="title2">Meu Perfil
-        </a></h7>
     </header>
     <main> <?php
             if (isset($_SESSION['msg'])) {
