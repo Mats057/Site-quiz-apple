@@ -24,6 +24,7 @@ if (!empty($_SESSION['id'])) {
 
     <body>
         <header>
+            <img id="logo" src="../img/logo.png" alt="Logo da Apple">
             <div id="options">
                 <a href="../index.php" class="title2">
                     Sobre a Apple
@@ -54,6 +55,7 @@ if (!empty($_SESSION['id'])) {
             $resultado_usuario = mysqli_query($sql, $result_usuario);
             while ($row_usuario = mysqli_fetch_assoc($resultado_usuario)) {
                 echo '<div id="respostas">';
+                echo '<img src="../img/' . $row_usuario['foto'] . '" alt="Foto de perfil" id="foto">';
                 echo '<h2 class="text-center">Nome: ' . $row_usuario['nome'] . '</h2>';
                 echo '<h2 class="text-center">Usuário: ' . $row_usuario['usuario'] . '</h2>';
                 echo '<h2 class="text-center">Email: ' . $row_usuario['email'] . '</h2>';

@@ -17,6 +17,7 @@ session_start();
 
 <body>
     <header>
+        <img id="logo" src="img/logo.png" alt="Logo da Apple">
         <div id="options">
             <h7 id="title">Sobre a Apple</h7>
             <a href="formp.php" class="title2">Teste Apple</a>

@@ -25,6 +25,7 @@ if (!empty($_SESSION['id'])) {
 
 <body>
     <header>
+        <img id="logo" src="../img/logo.png" alt="Logo da Apple">
         <div id="options">
             <a href="../index.php" class="title2">Sobre a Apple</a>
             <a href="../formp.php" class="title2">Teste Apple</a>
@@ -46,7 +47,7 @@ if (!empty($_SESSION['id'])) {
             <h1>Configurações da conta</h1>
             <div id="dados">
                 <div>
-                    <h2>Foto:</h2>
+                    <h2 id="titulo_foto">Foto:</h2>
                     <?php
                     echo '<img src="../img/' . $_SESSION['foto'] . '" alt="Foto de perfil" id="foto">';
                     ?><br>

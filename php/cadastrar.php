@@ -72,6 +72,7 @@ if ($btnCadUsuario) {
 
 <body>
 	<header>
+		<img id="logo" src="../img/logo.png" alt="Logo da Apple">
 		<div id="options">
 			<a href="../index.php" class="title2">
 				Sobre a Apple
