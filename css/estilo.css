@@ -23,7 +23,7 @@ html {
   scroll-behavior: smooth;
 }
 
-body{
+body {
   background-color: var(--cor-fundo);
   margin: 7rem 0 3vw;
   padding: 0;
@@ -63,6 +63,7 @@ header {
   text-align: center;
   font-size: 25px;
   margin: 0 20px;
+  text-shadow: #7f7f7f 0px 0px 3px;
 }
 
 .title2 {
@@ -88,7 +89,7 @@ header {
   margin: auto 5vw;
 }
 
-#textos{
+#textos {
   color: var(--cor-letra);
   font-size: 21px;
   display: flex;
@@ -109,7 +110,6 @@ header {
   text-align: center;
   margin: 0 0;
 }
-
 
 .container {
   display: flex;
@@ -169,7 +169,7 @@ header {
   font-size: 20px;
   color: #fff;
   text-align: center;
-  margin: 50px auto 20px;
+  margin: 50px 0 20px;
   padding: 5px;
   background: var(--cor-apple);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
@@ -220,18 +220,19 @@ header {
   display: block;
   margin: 40px 30% 0;
   border-radius: 20px;
-  padding: 5px;
+  padding: 20px;
   color: var(--cor-letra);
   align-items: center;
   text-align: center;
   background-color: var(--cor-menu);
+  border: var(--cor-letra2) 2px solid;
 }
 
 .resp {
   background-color: var(--cor-fundo);
   margin: 20px auto;
   border-radius: 20px;
-  border: var(--cor-letra) 2px solid;
+  border: var(--cor-letra2) 2px solid;
   display: inline-block;
   line-height: 2;
   vertical-align: middle;
@@ -254,7 +255,7 @@ header {
   border-radius: 20px;
   padding: 5px;
   background: var(--cor-menu);
-  border: var(--cor-letra) 2px solid;
+  border: var(--cor-letra2) 2px solid;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 #pontos {
@@ -338,7 +339,7 @@ header {
   border-radius: 20px;
   padding: 20px;
   background: var(--cor-menu);
-  border: var(--cor-letra) 2px solid;
+  border: var(--cor-letra2) 2px solid;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
 }
 #theme {
@@ -361,7 +362,7 @@ header {
   background-color: var(--cor-fundo);
   margin: 20px auto;
   border-radius: 20px;
-  border: var(--cor-letra) 2px solid;
+  border: var(--cor-letra2) 2px solid;
   display: inline-block;
   line-height: 2;
   vertical-align: middle;
@@ -423,18 +424,29 @@ header {
   display: none;
 }
 
-#sair{
+#sair {
   color: #a3222b;
+}
+#sair:hover {
+  color: #b32630;
+  transition: 0.3s;
+  opacity: 1;
+  text-shadow: #921921 0px 0px 1px;
 }
 
 @media (max-width: 768px) {
-  body,body.dark{
+  body,
+  body.dark {
     margin-top: 10rem;
   }
   #perfil {
-    margin: auto 5rem  10vh;
+    margin: auto 5rem 10vh;
   }
-  #respostas{
+  #respostas {
     margin: 3rem 5rem 0;
+  }
+  .image {
+    max-width: 80vw;
+    margin-bottom: 40px;
   }
 }
