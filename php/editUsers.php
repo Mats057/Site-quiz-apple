@@ -31,7 +31,7 @@ if (!empty($_SESSION['id'])) {
     <header>
         <div id="options">
             <a href="../index.php" class="title2">
-               Sobre a Apple
+                Sobre a Apple
             </a>
             <a href="../formp.php" class="title2">
                 Teste Apple
@@ -46,6 +46,9 @@ if (!empty($_SESSION['id'])) {
             </div>
             <a href="conta.php" class="title2">
                 Meu Perfil
+            </a>
+            <a href="logout.php" class="title2" id="sair">
+                Sair
             </a>
         </div>
     </header>

@@ -36,7 +36,7 @@ if (!empty($_SESSION['id'])) {
                 </div>
             </div>
             <h7 id="title">Meu Perfil</h7>
-            <a href="php/logout.php" class="title2" id="sair">
+            <a href="logout.php" class="title2" id="sair">
                 Sair
             </a>
         </div>

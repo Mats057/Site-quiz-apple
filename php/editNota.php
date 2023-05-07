@@ -47,6 +47,9 @@ if (!empty($_SESSION['id'])) {
             <a href="conta.php" class="title2">
                 Meu Perfil
             </a>
+            <a href="logout.php" class="title2" id="sair">
+                Sair
+            </a>
         </div>
     </header>
     <main>
